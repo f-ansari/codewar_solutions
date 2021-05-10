@@ -14,9 +14,19 @@ const getCount = (str) => {
       }
     })
   }
-  console.log(vowelsCount)
+  // console.log(vowelsCount)
 }
 
 // getCount('abracadabra')
 // getCount('pear tree')
 getCount('The quick brown fox jumps over the lazy dog')
+
+// Problem: Reverse a Number
+// https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5/train/javascript
+// not solved
+
+const reverseNumber = (num) => {}
+
+reverseNumber(123)
+reverseNumber(-543)
+reverseNumber(876)
