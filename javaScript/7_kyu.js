@@ -23,7 +23,7 @@ const getCount = (str) => {
 
 // Problem: Reverse a Number
 // https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5/train/javascript
-// not solved
+// solved Need to refactor
 
 const reverseNumber = (num) => {
   let n = num.toString()
