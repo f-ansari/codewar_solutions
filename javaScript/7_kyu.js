@@ -23,25 +23,11 @@ const getCount = (str) => {
 
 // Problem: Reverse a Number
 // https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5/train/javascript
-// solved Need to refactor
+// Solved
 
-const reverseNumber = (num) => {
-  let n = num.toString()
-  let nArray = n.split('')
-  let resultArray = []
-  let negHolder = ''
+const reverseNumber = (n) =>
+  (n > 0 ? 1 : -1) * Math.abs(n).toString().split('').reverse().join('')
 
-  nArray.forEach((element) => {
-    if (element === '-') {
-      negHolder = element
-    } else resultArray.push(element)
-  })
-  resultArray.reverse()
-  resultArray.join('')
-
-  console.log(parseInt(negHolder + resultArray.join('')))
-}
-
-reverseNumber(123)
-// reverseNumber(-543)
+// reverseNumber(123)
+// console.log(reverseNumber(-543))
 // reverseNumber(876)
