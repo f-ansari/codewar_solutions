@@ -31,3 +31,11 @@ const reverseNumber = (n) =>
 // reverseNumber(123)
 // console.log(reverseNumber(-543))
 // reverseNumber(876)
+
+// Problem: List Filtering
+// https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript
+// not solved
+
+const filter_list = (l) => {}
+
+filter_list([1, 2, 'aasf', '1', '123', 123])
