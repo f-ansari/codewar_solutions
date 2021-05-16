@@ -34,8 +34,15 @@ const reverseNumber = (n) =>
 
 // Problem: List Filtering
 // https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript
-// not solved
+// solved
 
-const filter_list = (l) => {}
+const filter_list = (l) => {
+  let results = []
+
+  l.filter((element) => {
+    if (typeof element === 'number' && element >= 0) results.push(element)
+  })
+  return results
+}
 
 filter_list([1, 2, 'aasf', '1', '123', 123])
