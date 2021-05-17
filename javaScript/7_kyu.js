@@ -67,6 +67,20 @@ findShort('bitcoin take over the world maybe who knows perhaps')
 // https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 // not solved
 
-const highAndLow = (number) => {}
+const highAndLow = (number) => {
+  const numArray = number.split(' ')
+  maxChecker = parseInt(numArray[0])
+  minChecker = parseInt(numArray[0])
 
-highAndLow('4 5 29 54 4 0 -214 542 -64 1 -3 6 -6')
+  numArray.forEach((num) => {
+    if (parseInt(num) > maxChecker) maxChecker = parseInt(num)
+    if (parseInt(num) < minChecker) minChecker = parseInt(num)
+  })
+  return `${maxChecker} ${minChecker}`
+}
+
+// highAndLow('4 5 29 54 4 0 -214 542 -64 1 -3 6 -6')
+
+// console.log(highAndLow('4 5 29 54 4 0 -214 542 -64 1 -3 6 -6'))
+// console.log(highAndLow('1 2 3 4 5'))
+// console.log(highAndLow('0 2'))
