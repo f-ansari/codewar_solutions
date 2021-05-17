@@ -46,3 +46,11 @@ const filter_list = (l) => {
 }
 
 filter_list([1, 2, 'aasf', '1', '123', 123])
+
+// Problem: Shortest Word
+// https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/train/javascript
+// not solved
+
+const findShort = (s) => {}
+
+findShort('bitcoin take over the world maybe who knows perhaps')
