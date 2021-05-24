@@ -65,7 +65,7 @@ findShort('bitcoin take over the world maybe who knows perhaps')
 
 // Problem: Highest and Lowest
 // https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
-// not solved
+// Solved
 
 const highAndLow = (number) => {
   const numArray = number.split(' ')
