@@ -84,3 +84,19 @@ const highAndLow = (number) => {
 // console.log(highAndLow('4 5 29 54 4 0 -214 542 -64 1 -3 6 -6'))
 // console.log(highAndLow('1 2 3 4 5'))
 // console.log(highAndLow('0 2'))
+
+// Problem: I'm everywhere
+// https://www.codewars.com/kata/6097a9f20d32c2000d0bdb98/train/javascript
+// Not Solved
+
+const i = (word) => {}
+
+i('Phone')
+i('World')
+i('Human')
+i('Programmer')
+
+i('')
+i('Inspire')
+i('East')
+i('road')
