@@ -87,16 +87,48 @@ const highAndLow = (number) => {
 
 // Problem: I'm everywhere
 // https://www.codewars.com/kata/6097a9f20d32c2000d0bdb98/train/javascript
-// Not Solved
+// Solved
 
-const i = (word) => {}
+const i = (word) => {
+  const wordVowelChecker = (word) => {
+    let vowelCount = 0
+    let otherCharCount = 0
 
+    for (char in word) {
+      let lowerWord = word.toLowerCase()
+
+      if (
+        lowerWord[char] === 'a' ||
+        lowerWord[char] === 'e' ||
+        lowerWord[char] === 'i' ||
+        lowerWord[char] === 'o' ||
+        lowerWord[char] === 'u'
+      )
+        vowelCount++
+      else otherCharCount++
+    }
+
+    if (vowelCount >= otherCharCount) return true
+  }
+
+  if (
+    word === '' ||
+    word.charAt(0) === 'I' ||
+    word.charAt(0) !== word.charAt(0).toUpperCase() ||
+    wordVowelChecker(word) === true
+  )
+    return 'Invalid word'
+  else return `i${word}`
+}
+
+//test cases
 i('Phone')
 i('World')
 i('Human')
 i('Programmer')
 
-i('')
-i('Inspire')
-i('East')
-i('road')
+//test cases to set condition for
+// i('')
+// i('Inspire')
+// i('East')
+// i('road')
