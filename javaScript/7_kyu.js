@@ -135,4 +135,18 @@ i('Programmer')
 
 // Problem: Reverse words
 // https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript
-// Not Solved
+// Solved
+
+const reverseWords = (str) => {
+  const wordsArray = str.split(' ')
+  let newStr = ''
+
+  wordsArray.forEach((word) => {
+    const wordArray = word.split('').reverse().join('')
+    newStr += ` ${wordArray}`
+  })
+  const finalStr = newStr.split(' ').splice(1, Infinity).join(' ')
+  return finalStr
+}
+
+reverseWords('The quick brown fox jumps over the lazy dog.')
