@@ -6,4 +6,16 @@ const boolToWord = (bool) => {
   return bool ? 'Yes' : 'No'
 }
 
-console.log(boolToWord(false))
+// console.log(boolToWord(false))
+
+// Problem: Couning sheep...
+// https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+// Solved
+
+function countSheeps(arrayOfSheep) {
+  let count = 0
+  arrayOfSheep.forEach((sheep) => {
+    if (sheep) count += 1
+  })
+  return count
+}
