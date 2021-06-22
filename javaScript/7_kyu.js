@@ -160,13 +160,10 @@ const removeUrlAnchor = (url) => {
   let noAnchorUrl = ''
   // console.log(urlArray)
 
-  urlArray.filter((element) => {
-    // console.log(element)
-    if (element !== '#') {
-      noAnchorUrl += element
-    } else if (element === '#') return
+  urlArray.filter((element, i) => {
+    console.log(`${element}, ${i}`)
   })
-  console.log(noAnchorUrl)
+  // console.log(noAnchorUrl)
 }
 
 removeUrlAnchor('www.codewars.com#about')
