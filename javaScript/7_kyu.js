@@ -158,12 +158,17 @@ reverseWords('The quick brown fox jumps over the lazy dog.')
 const removeUrlAnchor = (url) => {
   const urlArray = url.split('')
   let noAnchorUrl = ''
-  // console.log(urlArray)
 
   urlArray.filter((element, i) => {
-    console.log(`${element}, ${i}`)
+    if (element === '#') {
+      noAnchorUrl = urlArray.slice(0, i).join('')
+    } 
+    else noAnchorUrl += element
   })
-  // console.log(noAnchorUrl)
+  console.log(noAnchorUrl)
+  // return noAnchorUrl
 }
 
 removeUrlAnchor('www.codewars.com#about')
+removeUrlAnchor('www.codewars.com/katas/?page=1#about')
+removeUrlAnchor('www.codewars.com/katas/')
