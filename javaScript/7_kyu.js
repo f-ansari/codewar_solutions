@@ -153,17 +153,16 @@ reverseWords('The quick brown fox jumps over the lazy dog.')
 
 // Problem: Remove anchor from URL
 // https://www.codewars.com/kata/51f2b4448cadf20ed0000386/train/javascript
-// Not Solved
+// Solved
 
 const removeUrlAnchor = (url) => {
   const urlArray = url.split('')
-  let noAnchorUrl = ''
+  let noAnchorUrl = urlArray.join('')
 
   urlArray.filter((element, i) => {
     if (element === '#') {
       noAnchorUrl = urlArray.slice(0, i).join('')
     } 
-    else noAnchorUrl += element
   })
   console.log(noAnchorUrl)
   // return noAnchorUrl
