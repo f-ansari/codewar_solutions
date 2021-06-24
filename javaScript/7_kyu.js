@@ -164,10 +164,19 @@ const removeUrlAnchor = (url) => {
       noAnchorUrl = urlArray.slice(0, i).join('')
     } 
   })
-  console.log(noAnchorUrl)
+  // console.log(noAnchorUrl)
   // return noAnchorUrl
 }
 
 removeUrlAnchor('www.codewars.com#about')
 removeUrlAnchor('www.codewars.com/katas/?page=1#about')
 removeUrlAnchor('www.codewars.com/katas/')
+
+// Problem: Find the next perfect Square
+// https://www.codewars.com/kata/56269eb78ad2e4ced1000013/train/javascript
+// Not Solved
+
+const findNextSquare = (sq) => {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  return -1;
+}
