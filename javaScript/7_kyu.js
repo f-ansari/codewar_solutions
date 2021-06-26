@@ -178,5 +178,18 @@ removeUrlAnchor('www.codewars.com/katas/')
 
 const findNextSquare = (sq) => {
   // Return the next square if sq is a perfect square, -1 otherwise
-  return -1;
+
+  if (Number.isInteger(Math.sqrt(sq)) === true){
+    let newPerfectSquare = Math.pow((Math.sqrt(sq) + 1), 2)
+    return newPerfectSquare
+  }
+  else return -1
+
+  // return -1;
 }
+
+findNextSquare(121)
+// findNextSquare(625)
+// findNextSquare(319225)
+
+findNextSquare(155)
