@@ -35,3 +35,11 @@ const high = (x) => {
 }
 
 high('man i need a taxi up to ubud')
+
+// Problem: Highest Rank Number in an Array
+// https://www.codewars.com/kata/5420fc9bb5b2c7fd57000004/train/javascript
+// Not Solved
+
+const highestRank = (arr) => {
+  //set up problem
+}
