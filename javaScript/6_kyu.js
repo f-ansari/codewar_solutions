@@ -3,35 +3,24 @@
 // Not Solved
 
 const high = (x) => {
-  const letters = [
-    0,
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-  ]
+  let alaphabets = 'abcdefghijklmnopqrstuvwxyz'
+  const alphaArray = alaphabets.split('')
+  const wordsArray  = x.split(' ')
+  let highestCount = 0
+  // console.log(sentence)
+
+alphaArray.forEach((alphabet, i) => {
+  let currentCount = 0
+  const alaphabetValue = i + 1
+  // console.log(element, alaphabetValue)
+  wordsArray.forEach(word => {
+    // console.log(word)
+    for (char in word) {
+      if (char = alphabet) currentCount += alaphabetValue
+    }
+  });
+  console.log(currentCount)
+  });
 }
 
 high('man i need a taxi up to ubud')
