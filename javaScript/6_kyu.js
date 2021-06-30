@@ -7,18 +7,16 @@ const high = (x) => {
   const alphaArray = alaphabets.split('')
   const wordsArray  = x.split(' ')
   let highestCount = 0
+  let currentCount = 0
   // console.log(sentence)
 
-alphaArray.forEach((alphabet, i) => {
-  let currentCount = 0
-  const alaphabetValue = i + 1
-  // console.log(element, alaphabetValue)
   wordsArray.forEach(word => {
-    // console.log(word)
     for (char in word) {
-      if (char = alphabet) currentCount += alaphabetValue
+      alphaArray.forEach((alphabet, i) => {
+        const alaphabetValue = i + 1
+        if (char = alphabet) currentCount += alaphabetValue
+        });
     }
-  });
   console.log(currentCount)
   });
 }
