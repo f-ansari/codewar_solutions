@@ -29,4 +29,7 @@ high('man i need a taxi up to ubud')
 
 const highestRank = (arr) => {
   //set up problem
+
+  // sudo code
+  // funnction sort through array and return the last number in array
 }
