@@ -17,7 +17,7 @@ const high = (x) => {
         if (char = alphabet) currentCount += alaphabetValue
         });
     }
-  console.log(currentCount)
+  // console.log(currentCount)
   });
 }
 
@@ -28,8 +28,10 @@ high('man i need a taxi up to ubud')
 // Not Solved
 
 const highestRank = (arr) => {
-  //set up problem
+  return Math.max(...arr)
 
-  // sudo code
-  // funnction sort through array and return the last number in array
+  // did not read question properly redo
+
 }
+
+highestRank([12,10,8,8,3,3,3,3,2,4,10,12,10])
