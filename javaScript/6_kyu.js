@@ -35,3 +35,20 @@ const highestRank = (arr) => {
 }
 
 highestRank([12,10,8,8,3,3,3,3,2,4,10,12,10])
+
+// Problem: The vowel code
+// https://www.codewars.com/kata/53697be005f803751e0015aa/train/javascript
+// Not Solved
+
+function encode(string) {
+  return
+}
+
+function decode(string) {
+  return
+}
+
+encode('hello')
+// encode('How are you today?')
+// encode('This is an encoding test.')
+// decode('h2ll4')
